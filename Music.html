@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Music | Sure Heaven Ministries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- YOUR CSS -->
+  <link rel="stylesheet" href="CSS/Music.css" />
+  <link rel="stylesheet" href="CSS/styles.css" />
+
+  <!-- FAVICON -->
+  <link rel="icon" type="image/jpeg" href="The title.jpg">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<!-- Navigation -->
+  <header>
+    <div class="logo">Sure Heaven Ministries</div>
+
+    <nav>
+      <ul class="menu">
+
+        <!-- HOME -->
+        <li class="dropdown">
+          <a href="index.html" class="active">Home</a>
+          <ul class="dropdown-menu">
+            <li><a href="About.html">About Us</a></li>
+          </ul>
+        </li>
+
+        <!-- FOUNDATION -->
+        <li class="dropdown">
+          <a href="#">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="Foundation.html">Schools</a></li>
+            <li><a href="#">Churches</a></li>
+          </ul>
+        </li>
+
+        <!-- MEDIA -->
+        <li class="dropdown">
+          <a href="#">Media</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Radio</a></li>
+            <li><a href="Music.html">Music</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="#">Studio</a></li>
+          </ul>
+        </li>
+
+        <!-- Accounts -->
+         <li class="dropdown">
+          <a href="#">My Account</a>
+          <ul class="dropdown-menu">
+              <li><a href="update.html">Update</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="Register.html">Register</a></li>
+          </ul>
+        </li>
+
+        <!-- DONATE -->
+         <li>
+                    <a href="Donate.html" class="donate-btn">Donate</a>
+                </li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="overlay">
+    <h1>Gospel Music Ministry</h1>
+    <p>Experience worship, praise, and gospel inspiration from our talented artists.</p>
+  </div>
+</section>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main>
+
+  <!-- ===== MUSIC CATEGORIES ===== -->
+  <section class="services">
+    <h2>Music Categories</h2>
+
+    <div class="service-cards">
+      <div class="card">
+        <h3>Worship</h3>
+        <p>Deep spiritual worship songs.</p>
+      </div>
+
+      <div class="card">
+        <h3>Praise</h3>
+        <p>High-energy praise music.</p>
+      </div>
+
+      <div class="card">
+        <h3>Inspirational</h3>
+        <p>Soul-touching gospel melodies.</p>
+      </div>
+
+      <div class="card">
+        <h3>Youth Gospel</h3>
+        <p>Modern gospel for the youth.</p>
+      </div>
+    </div>
+  </section>
+
+  <br><br>
+
+  <!-- ===== ARTISTS SECTION ===== -->
+  <section class="services">
+    <h2>Featured Artists</h2>
+
+    <div class="service-cards">
+
+      <!-- ARTIST 1 -->
+      <div class="card">
+        <img src="Images/artists/artist1.jpg" alt="Artist 1" width="100%" style="border-radius:12px;">
+        <h3>Sarah Worship</h3>
+        <p>Powerful worship leader.</p>
+      </div>
+
+      <!-- ARTIST 2 -->
+      <div class="card">
+        <img src="Images/artists/artist2.jpg" alt="Artist 2" width="100%" style="border-radius:12px;">
+        <h3>David Praise</h3>
+        <p>Energetic gospel minister.</p>
+      </div>
+
+      <!-- ARTIST 3 -->
+      <div class="card">
+        <img src="Images/artists/artist3.jpg" alt="Artist 3" width="100%" style="border-radius:12px;">
+        <h3>Grace Voice</h3>
+        <p>Inspirational gospel singer.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <br><br>
+
+  <!-- ===== ALBUMS & AUDIO PLAYER ===== -->
+  <section class="services">
+    <h2>Latest Albums & Songs</h2>
+
+    <div class="service-cards">
+
+      <!-- SONG 1 -->
+      <div class="card">
+
+        <div class="card-content">
+          <img src="Images/albums/album1.jpg" width="100%" style="border-radius:12px;">
+          <h3>Holy Fire</h3>
+          <p>By Sarah Worship</p>
+        </div>
+
+        <div class="audio-player">
+          <button class="play-btn" onclick="playAudio(0)">▶</button>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <span class="time-display">0:00</span>
+        </div>
+
+        <audio src="Audio/song1.mp3"></audio>
+      </div>
+
+      <!-- SONG 2 -->
+      <div class="card">
+
+        <div class="card-content">
+          <img src="Images/albums/album2.jpg" width="100%" style="border-radius:12px;">
+          <h3>Am In Love With Jesus</h3>
+          <p>By Pr Chosen Richards</p>
+        </div>
+
+        <div class="audio-player">
+          <button class="play-btn" onclick="playAudio(1)">▶</button>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <span class="time-display">0:00</span>
+        </div>
+
+        <audio src="music/AM IN LOVE PR CHOSEN RICHARDS.mp3"></audio>
+      </div>
+
+      <!-- SONG 3 -->
+      <div class="card">
+
+        <div class="card-content">
+          <img src="Images/albums/album3.jpg" width="100%" style="border-radius:12px;">
+          <h3>Grace Flow</h3>
+          <p>By Grace Voice</p>
+        </div>
+
+        <div class="audio-player">
+          <button class="play-btn" onclick="playAudio(2)">▶</button>
+          <div class="progress-bar"><div class="progress-fill"></div></div>
+          <span class="time-display">0:00</span>
+        </div>
+
+        <audio src="Audio/song3.mp3"></audio>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2025 Sure Heaven Ministries. All Rights Reserved.</p>
+</footer>
+
+<!-- ================= AUDIO SCRIPT ================= -->
+<script>
+const players = document.querySelectorAll("audio");
+
+function playAudio(index) {
+  players.forEach((audio, i) => {
+    if (i !== index) {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+  });
+
+  const audio = players[index];
+  if (audio.paused) {
+    audio.play();
+  } else {
+    audio.pause();
+  }
+}
+</script>
+
+</body>
+</html>

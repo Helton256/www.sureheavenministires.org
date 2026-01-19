@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Sure Heaven Ministries</title>
+  <link rel="stylesheet" href="CSS/styles.css" />
+  <link rel="stylesheet" href="CSS/login.css" />
+  <link rel="icon" type="image/jpeg" href="The title.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="logo">Sure Heaven Ministries</div>
+
+    <nav>
+      <ul class="menu">
+
+        <!-- HOME -->
+        <li class="dropdown">
+          <a href="index.html" class="active">Home</a>
+          <ul class="dropdown-menu">
+            <li><a href="About.html">About Us</a></li>
+          </ul>
+        </li>
+
+        <!-- FOUNDATION -->
+        <li class="dropdown">
+          <a href="#">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="Foundation.html">Schools</a></li>
+            <li><a href="#">Churches</a></li>
+          </ul>
+        </li>
+
+        <!-- MEDIA -->
+        <li class="dropdown">
+          <a href="#">Media</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Radio</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="#">Studio</a></li>
+          </ul>
+        </li>
+
+        <!-- Accounts -->
+         <li class="dropdown">
+          <a href="#">My Account</a>
+          <ul class="dropdown-menu">
+              <li><a href="update.html">Update</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="Register.html">Register</a></li>
+            </ul>
+        </li>
+
+        <!-- DONATE -->
+         <li>
+                    <a href="Donate.html" class="donate-btn">Donate</a>
+                </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="login-section">
+      <div class="form-container">
+        <h2>Welcome Back</h2>
+        <p>Login to continue your journey with Sure Heaven Ministries.</p>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" required />
+          </div>
+
+          <p class="forgot-link"><a href="forgot.html">Forgot password?</a></p>
+
+          <button type="submit" class="btn">Login</button>
+
+          <p class="register-text">Don’t have an account? <a href="Register.html">Register here</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Sure Heaven Ministries. All Rights Reserved.</p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

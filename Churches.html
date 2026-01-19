@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churches</title>
+    <link rel="stylesheet" href="CSS/churches.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" type="image/jpeg" href="The title.jpg">
+   <!-- Include Swiper.js CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">Sure Heaven Ministries</div>
+        <nav>
+            <ul class="menu">
+                <li class="dropdown">
+                    <a href="index.html">Home</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="About.html">About Us</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Projects</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Foundation.html">School</a></li>
+                        <li><a href="Churches.html" class="active">Churches</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Media</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Radio</a></li>
+                        <li><a href="Music.html">Music</a></li>
+                        <li><a href="#">TV</a></li>
+                        <li><a href="#">Studio</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">My Account</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="Register.html">Register</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to Our Churches</h1>
+            <p>Discover a place to worship, connect, and grow.</p>
+            <a href="#locations" class="cta-button">Find a Church</a>
+        </section>
+
+        <section id="locations">
+            <h2>Church Locations</h2>
+            <p>Welcome to our Churches page. Here you can find information about our various church locations and their services.</p>
+
+            <div class="church-card">
+                <h3>Church 1</h3>
+                <p>Address: 123 Church Street, City, Country</p>
+                <p>Service Times: Sundays at 9:00 AM and 11:00 AM</p>
+            </div>
+
+            <div class="church-card">
+                <h3>Church 2</h3>
+                <p>Address: 456 Faith Avenue, City, Country</p>
+                <p>Service Times: Sundays at 10:00 AM and 12:00 PM</p>
+            </div>
+        </section>
+
+        <section class="photo-slider">
+            <h2>Our Churches in Pictures</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/church1.jpg" alt="Church 1"></div>
+                    <div class="swiper-slide"><img src="images/church2.jpg" alt="Church 2"></div>
+                    <div class="swiper-slide"><img src="images/church3.jpg" alt="Church 3"></div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <p>&copy; 2026 Sure Heaven Ministries. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
